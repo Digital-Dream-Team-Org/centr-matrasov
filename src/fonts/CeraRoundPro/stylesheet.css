@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: url('CeraRoundPro-Black.eot');
+    src: url('CeraRoundPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('CeraRoundPro-Black.woff2') format('woff2'),
+        url('CeraRoundPro-Black.woff') format('woff'),
+        url('CeraRoundPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+

@@ -1,0 +1,357 @@
+@import "master";
+
+$grid-columns: 10;
+$grid-gutter-width: 20px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px,
+);
+
+$theme-colors: (
+  "main": $main,
+  "main-dark": $main-dark,
+  "main-light": $main-light,
+  "attention": $attention,
+  "attention-dark": $attention-dark,
+  "attention-light": $attention-light,
+  "accent": $accent,
+  "accent-dark": $accent-dark,
+  "accent-light": $accent-light,
+  "action": $action,
+  "action-dark": $action-dark,
+  "action-light": $action-light,
+  "black": $black,
+  "black-subtext": $black-subtext,
+  "black-secondary": $black-secondary,
+  "black-lines": $black-lines,
+  "white": $white,
+  "white-high": $white-high,
+  "white-low": $white-low,
+);
+
+$font-weight-normal: 500;
+
+// Buttons
+$input-btn-padding-y: 0.8571rem;
+$input-btn-padding-x: 1.4286rem;
+$input-btn-font-size: 1rem;
+$input-btn-line-height: 1.5;
+
+$input-btn-focus-width: 0;
+// $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
+// $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+$input-btn-padding-y-sm: 0.3571rem;
+$input-btn-padding-x-sm: 0.7143rem;
+$input-btn-font-size-sm: 0.8571rem;
+$input-btn-line-height-sm: 1.5;
+
+$input-btn-padding-y-lg: 0.8571rem;
+$input-btn-padding-x-lg: 1.4286rem;
+$input-btn-font-size-lg: 1rem;
+$input-btn-line-height-lg: 1.5;
+
+// $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+// $btn-focus-width:             $input-btn-focus-width !default;
+// $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
+// $btn-disabled-opacity:        .65 !default;
+// $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
+
+// $btn-link-disabled-color:     $gray-600 !default;
+
+// margin top for .btn-block class
+// $btn-block-spacing-y:         .5rem !default;
+
+$btn-border-radius: 10px;
+$btn-border-radius-lg: 10px;
+$btn-border-radius-sm: 10px;
+
+.btn {
+  &:hover {
+    border-color: transparent;
+  }
+  // &:focus {
+  //   border-color: transparent;
+  // }
+}
+
+.btn-main {
+  &:hover {
+    box-shadow: 0px 7px 20px rgba($main, 0.4);
+    background-color: $main;
+  }
+  &:focus {
+    background-color: $main-dark;
+  }
+}
+
+.btn-attention {
+  &:hover {
+    box-shadow: 0px 7px 20px rgba($attention, 0.4);
+    background-color: $attention;
+  }
+  &:focus {
+    background-color: $attention-dark;
+  }
+}
+
+.btn-accent {
+  &:hover {
+    box-shadow: 0px 7px 20px rgba($accent, 0.4);
+    background-color: $accent;
+  }
+  &:focus {
+    background-color: $accent-dark;
+  }
+}
+
+.btn-action {
+  &:hover {
+    box-shadow: 0px 7px 20px rgba($action, 0.4);
+    background-color: $action;
+  }
+  &:focus {
+    background-color: $action-dark;
+  }
+}
+
+.btn-black {
+  &:hover {
+    box-shadow: 0px 7px 20px rgba($black, 0.4);
+    background-color: $black;
+  }
+  &:focus {
+    background-color: $black-subtext;
+  }
+}
+.btn-white {
+  &:hover {
+    box-shadow: 0px 7px 20px rgba($white, 0.4);
+    background-color: $white;
+  }
+  &:focus {
+    background-color: $white-high;
+  }
+}
+.btn-icon {
+  margin-left: 100px;
+}
+
+body {
+  a.text-main {
+    &:hover,
+    &:focus {
+      color: $main !important;
+    }
+  }
+  a.text-attention {
+    &:hover,
+    &:focus {
+      color: $attention !important;
+    }
+  }
+  a.text-accent {
+    &:hover,
+    &:focus {
+      color: $accent !important;
+    }
+  }
+  a.text-action {
+    &:hover,
+    &:focus {
+      color: $action !important;
+    }
+  }
+  a.text-black {
+    &:hover,
+    &:focus {
+      color: $black !important;
+    }
+  }
+  a.text-black-subtext {
+    &:hover,
+    &:focus {
+      color: $black-subtext !important;
+    }
+  }
+  a.text-black-secondary {
+    &:hover,
+    &:focus {
+      color: $black-secondary !important;
+    }
+  }
+  a.text-black-secondary {
+    &:hover,
+    &:focus {
+      color: $black-lines !important;
+    }
+  }
+
+  a.text-white {
+    &:hover,
+    &:focus {
+      color: $white !important;
+    }
+  }
+  a.text-white-high {
+    &:hover,
+    &:focus {
+      color: $white-high !important;
+    }
+  }
+  a.text-white-low {
+    &:hover,
+    &:focus {
+      color: $white-low !important;
+    }
+  }
+}
+// Form Inputs
+$input-border-radius: 5px;
+$input-border-radius-lg: 5px;
+$input-border-radius-sm: 5px;
+
+$input-border-color: $black-lines;
+$input-focus-border-color: $action;
+
+$form-feedback-invalid-color: $attention-dark;
+
+$input-padding-y: 0.8571rem;
+$input-padding-x: 1.4286rem;
+
+$input-disabled-bg: $black-lines;
+
+.form-group {
+  color: $black-subtext;
+  label,
+  small {
+    margin-left: 20px;
+  }
+  label {
+    font-weight: bold;
+    font-size: 0.8571rem;
+    line-height: 150%;
+  }
+  small {
+    font-size: 0.8571rem;
+    line-height: 150%;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  input {
+    border: none;
+    color: $black;
+    &::placeholder {
+      color: $black-secondary;
+    }
+    &:disabled {
+      &::placeholder {
+        color: $black-secondary;
+      }
+    }
+  }
+
+  .form-label-sm {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .form-hint-sm {
+    margin-left: 0;
+    margin-top: 0.3571rem;
+  }
+  .form-control.is-invalid {
+    background-image: none;
+    padding-right: $input-padding-x;
+  }
+}
+
+form {
+  .btn {
+    border-radius: 5px;
+  }
+}
+
+.dropdown-toggle {
+  &::after {
+    content: "\e800" !important;
+    font-family: "fontello";
+    border: none !important;
+    vertical-align: top !important;
+    margin-left: 0 !important;
+  }
+}
+
+.pagination {
+  .page-item {
+    .page-link {
+      border-radius: 10px !important;
+      font-size: 12px;
+      color: #4f4f4f;
+
+      &__icon {
+        &-forward {
+          &::before {
+            transform: rotate(-90deg);
+          }
+        }
+        &-backward {
+          &::before {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+    margin-right: 4px;
+  }
+}
+
+// Makes background goes under border (stacks
+.form-control,
+.btn {
+  background-clip: border-box;
+}
+
+.navbar-toggler {
+  padding: 0 !important;
+  border: none !important;
+  font-size: 28px !important;
+  outline: none !important;
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+  }
+}
+.breadcrumb {
+  background: none !important;
+  margin-bottom: 10px !important;
+  padding: 0 !important;
+  .breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: $black-secondary;
+    font-family: "fontello";
+    content: "\e801";
+    font-size: 16px;
+  }
+  .breadcrumb-item {
+    font-size: 0.8571rem;
+    line-height: 17.9998px;
+    font-weight: 500;
+    color: $action;
+    &:last-child {
+      &::after {
+        display: inline-block;
+        color: $black-secondary;
+        font-family: "fontello";
+        content: "\e801";
+        transform: rotate(90deg);
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
