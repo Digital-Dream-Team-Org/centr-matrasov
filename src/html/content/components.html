@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Components</title>
+    <link rel="stylesheet" href="css/components.min.css" />
+    <link rel="stylesheet" href="libs/swiper.min.css" />
+    <link rel="stylesheet" href="libs/slick.css" />
+     
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/media.min.css" />
+  </head>
+  <body style="background: none;">
+    <section class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <a href="grid.html">Сетка</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="main-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 p-3 bg-primary">
+            <button type="button" class="mb-3 btn btn-main">Main</button>
+            <button type="button" class="mb-3 btn btn-main-dark">
+              Main dark
+            </button>
+            <button type="button" class="mb-3 btn btn-main-light">
+              Main light
+            </button>
+            <button type="button" class="mb-3 btn btn-attention">
+              Attention
+            </button>
+            <button type="button" class="mb-3 btn btn-attention-dark">
+              Attention dark
+            </button>
+            <button type="button" class="mb-3 btn btn-attention-light">
+              Attention light
+            </button>
+            <button type="button" class="mb-3 btn btn-accent">Accent</button>
+            <button type="button" class="mb-3 btn btn-accent-dark">
+              Accent dark
+            </button>
+            <button type="button" class="mb-3 btn btn-accent-light">
+              Accent light
+            </button>
+            <button type="button" class="mb-3 btn btn-action">Action</button>
+            <button type="button" class="mb-3 btn btn-action-dark">
+              Action dark
+            </button>
+            <button type="button" class="mb-3 btn btn-action-light">
+              Action light
+            </button>
+            <button type="button" class="mb-3 btn btn-black">Black</button>
+            <button type="button" class="mb-3 btn btn-black-subtext">
+              Black subtext
+            </button>
+            <button type="button" class="mb-3 btn btn-black-secondary">
+              Black secondary
+            </button>
+            <button type="button" class="mb-3 btn btn-black-lines">
+              Black lines
+            </button>
+            <button type="button" class="mb-3 btn btn-white">White</button>
+            <button type="button" class="mb-3 btn btn-white-high">
+              White high
+            </button>
+            <button type="button" class="mb-3 btn btn-white-low">
+              White low
+            </button>
+            <button type="button" class="mb-3 btn btn-outline-main">
+              Outline main
+            </button>
+            <button type="button" class="mb-3 btn btn-outline-main btn-sm">
+              Outline main small
+            </button>
+            <button type="button" class="mb-3 btn btn-main">
+              Main with icon <i class="btn-icon icon-icon_yu"></i>
+            </button>
+            <button type="button" class="mb-3 btn btn-outline-main">
+              Outline main with icon <i class="btn-icon icon-icon_yu"></i>
+            </button>
+            <button type="button" class="mb-3 btn btn-outline-main btn-sm">
+              Outline main small with icon <i class="btn-icon icon-icon_yu"></i>
+            </button>
+          </div>
+          <div class="col-md-10 bg-white border py-3">
+            <form>
+              <div class="form-group">
+                <label for="textInput">Label</label>
+                <input type="text" class="form-control" id="textInput" placeholder="Плейсхолдер">
+                <small>Hint</small>
+              </div>
+              <div class="form-group">
+                <label for="textInput">Label</label>
+                <input type="text" class="form-control is-invalid" id="textInput" placeholder="Плейсхолдер">
+                <small class="invalid-feedback">Hint</small>
+              </div>
+              <div class="form-group">
+                <label for="textInput">Label</label>
+                <input type="text" class="form-control" id="textInput" placeholder="Плейсхолдер" disabled>
+                <small>Hint</small>
+              </div>
+              <div class="form-group">
+                <label class="form-label-sm" for="textInput">Label</label>
+                <input type="text" class="form-control form-control-sm" id="textInput" placeholder="Плейсхолдер">
+                <small class="form-hint-sm">Hint</small>
+              </div>
+
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  id="checkbox-take_out_old"
+                  name="take_out_old"
+                  class="custom-control-input"
+                  value="type_pickup"
+                />
+                <label
+                  class="custom-control-label"
+                  for="checkbox-take_out_old"
+                >
+                  Чекбокс
+                </label>
+              </div>
+              <div class="checkbox">
+                <label data-role="label_arrFilter_22_2226203566" class="bx-filter-param-label" for="arrFilter_22_2226203566">
+                  <span class="bx-filter-input-checkbox">
+                    <input type="checkbox" value="Y" name="arrFilter_22_2226203566" id="arrFilter_22_2226203566" onclick="smartFilter.click(this)">
+                    <span class="bx-filter-param-text" title="35">35&nbsp;(<span data-role="count_arrFilter_22_2226203566">6</span>)</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input
+                  type="radio"
+                  id="radio-delivery_home"
+                  name="delivery_type"
+                  class="custom-control-input"
+                  value="home"
+                  checked
+                />
+                <label
+                  class="custom-control-label"
+                  for="radio-delivery_home"
+                >
+                  Радио
+                </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input
+                  type="radio"
+                  id="radio-delivery_home1"
+                  name="delivery_type"
+                  class="custom-control-input"
+                  value="home1"
+                  checked
+                />
+                <label
+                  class="custom-control-label"
+                  for="radio-delivery_home1"
+                >
+                  Радио
+                </label>
+              </div>
+
+              <button type="button" class="my-3 btn btn-main">Main Form</button>
+            </form>
+          </div>
+          <div class="col-md-10 p-3 bg-white border">
+            <p>Normal</p>
+            <p class="text-small">Small</p>
+            <p class="text-small text-black-subtext">Small Subtext</p>
+            <p class="text-subtitle">Subtitle</p>
+            <p class="text-subtitle text-black-secondary">
+              Subtitle Black Secondary
+            </p>
+            <p class="text-title">ә, ғ, қ, ң, ө, ұ, ү, h</p>
+            <p class="text-title text-main">Title Main</p>
+            <p class="text-title text-attention">Title Attention</p>
+          </div>
+          <div class="col-md-10 bg-dark p-3">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="assets/logo.png" alt="logo" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 p-3 border">
+            <button class="btn test-dark"></button>
+            <style>
+                #icons i {
+                  padding: 10px;
+                }
+            </style>
+    <div class="container" id="icons" style="font-size: 50px;">
+      <div class="row">
+        <i class="icon-icon_arrows_1"></i> 
+        <i class="icon-icon_arrows_2"></i>
+        <i class="icon-icon_bed"></i>
+        <i class="icon-icon_cart"></i>
+      </div>
+      <div class="row">
+        <i class="icon-icon_close_1"></i>
+        <i class="icon-icon_close_2"></i>
+        <i class="icon-icon_compare"></i>
+        <i class="icon-icon_credit"></i> 
+      </div>
+      <div class="row">
+        <i class="icon-icon_delivery_1"></i>
+        <i class="icon-icon_delivery_2"></i>
+        <i class="icon-icon_fb"></i>
+        <i class="icon-icon_height"></i>
+      </div>
+      <div class="row">
+        <i class="icon-icon_ig"></i>
+        <i class="icon-icon_location"></i>
+        <i class="icon-icon_next"></i>
+        <i class="icon-icon_ok_1"></i>
+      </div>
+      <div class="row">
+        <i class="icon-icon_ok_2"></i>
+        <i class="icon-icon_phone"></i>
+        <i class="icon-icon_play"></i>
+        <i class="icon-icon_search"></i>
+      </div>
+      <div class="row">
+        <i class="icon-icon_security"></i> 
+        <i class="icon-icon_softness"></i>
+        <i class="icon-icon_spring"></i> 
+        <i class="icon-icon_star"></i> 
+      </div>
+      <div class="row">
+        <i class="icon-icon_user"></i> 
+        <i class="icon-icon_warranty"></i>
+        <i class="icon-icon_whatsapp"></i>
+        <i class="icon-icon_yu"></i>
+      </div>
+      <div class="row">
+        <i class="icon-icon_fabric"></i>
+        <i class="icon-icon_favorite"></i>
+        <i class="icon-icon_favorite_2"></i>
+        <i class="icon-icon_materials"></i>
+      </div>
+      <div class="row">
+        <i class="icon-icon_process"></i> 
+        <i class="icon-icon_size"></i>
+        <i class="icon-icon_softness"></i>
+        <i class="icon-icon_weight"></i>
+      </div>
+      <div class="row">
+        <i class="icon-icon_menu"></i> 
+        <i class="icon-icon_catalog"></i>
+        <i class="icon-icon_photo-add"></i>
+      </div>
+    </div>
+          </div>
+        </div>
+        <div class="row py-5 border">
+          <div class="col-md-2">
+            <div class="rating-stars">
+              <span class="rating-stars__star-wrap">
+                <i class="rating-stars__star icon-icon_star active"></i>
+                <i class="rating-stars__star icon-icon_star active"></i>
+                <i class="rating-stars__star icon-icon_star active"></i>
+                <i class="rating-stars__star icon-icon_star active"></i>
+                <i class="rating-stars__star icon-icon_star"></i>
+              </span>
+              <span class="rating-stars__value text-subtitle">4.3/5</span>
+            </div>
+          </div>
+
+      </div>
+    </main>
+    <script src="js/components.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+     
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

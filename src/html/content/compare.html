@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compare</title>
+    <link rel="stylesheet" href="css/components.min.css" />
+    <link rel="stylesheet" href="libs/swiper.min.css" />
+    <link rel="stylesheet" href="libs/slick.css" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/media.min.css" />
+  </head>
+  <body>
+    <!-- inject:header:html -->
+    <!-- contents of html partials will be injected here -->
+    <!-- endinject -->
+    <main class="main-container">
+      <div class="container h-100">
+        <div class="main-container__content-wrap h-100">
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-top-spot"></div>
+            </div>
+          </div>
+          <div class="row h-100">
+            <div class="d-none d-lg-block col-lg-2 h-100">
+              <div class="sidebar-initial-spot">
+                <div class="sidebar position-relative mt-0 mbp-80">
+                  <p
+                    class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                  >
+                    Параметры сравнения
+                  </p>
+                  <form class="mbp-20">
+                    <div class="custom-control custom-radio mbp-10">
+                      <input
+                        type="radio"
+                        id="radio-compare_type_1"
+                        name="compare_type"
+                        class="custom-control-input"
+                        value="all"
+                        checked=""
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="radio-compare_type_1"
+                      >
+                        Все характерисики
+                      </label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        id="radio-compare_type_2"
+                        name="compare_type"
+                        class="custom-control-input"
+                        value="difference"
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="radio-compare_type_2"
+                      >
+                        Только различия
+                      </label>
+                    </div>
+                  </form>
+                  <a href="#">Очистить категорию</a>
+                </div>
+                <div
+                  class="sidebar compare-attributes-sidebar position-relative mt-0"
+                >
+                  <div
+                    class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                  >
+                    Основные характеристики
+                  </div>
+                  <div>
+                    <p class="compare-attribute compare-attribute--rating">
+                      Рейтинг
+                    </p>
+                    <p class="compare-attribute compare-attribute--type">Тип</p>
+                    <p class="compare-attribute compare-attribute--size">
+                      Размер наименование
+                    </p>
+                    <p class="compare-attribute compare-attribute--height">
+                      Высота
+                    </p>
+                    <p class="compare-attribute compare-attribute--firmness">
+                      Жесткость матраса
+                    </p>
+                    <p class="compare-attribute compare-attribute--base">
+                      Основание матраса
+                    </p>
+                    <p class="compare-attribute compare-attribute--load">
+                      Нагрузка
+                    </p>
+                    <p class="compare-attribute compare-attribute--composition">
+                      Состав
+                    </p>
+                    <p class="compare-attribute compare-attribute--price">
+                      Цена
+                    </p>
+                  </div>
+                  <div class="accordions-wrap compare-attribute-accordion">
+                    <div
+                      class="accordion opened accordion--linked"
+                      data-linked-id="attributes"
+                    >
+                      <a
+                        class="accordion__toggle text-small text-black-secondary text-uppercase font-weight-bold"
+                        href="#"
+                      >
+                        <span>Все характеристики</span>
+                        <i class="icon-icon_arrows_1"></i>
+                      </a>
+                      <div class="accordion__content">
+                        <p class="compare-attribute compare-attribute--filler">
+                          Наполнитель
+                        </p>
+                        <p class="compare-attribute compare-attribute--weight">
+                          Вес матраса
+                        </p>
+                        <p
+                          class="compare-attribute compare-attribute--cubature"
+                        >
+                          Кубатура матраса
+                        </p>
+                        <p
+                          class="compare-attribute compare-attribute--packaging"
+                        >
+                          Упаковка матраса
+                        </p>
+                        <p class="compare-attribute compare-attribute--color">
+                          Цвет
+                        </p>
+                        <p
+                          class="compare-attribute compare-attribute--warranty"
+                        >
+                          Гарантия
+                        </p>
+                        <p
+                          class="compare-attribute compare-attribute--manufacturer"
+                        >
+                          Страна-производитель
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="main-container__content">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="#">Главная страница</a>
+                    </li>
+                  </ol>
+                </nav>
+                <h1 class="text-title text-main mbp-20">Сравнение</h1>
+                <section class="mbp-100">
+                  <div class="custom-tabs-header-wrap mbp-20 mbp-lg-40">
+                    <ul class="nav nav-tabs custom-tabs-header" role="tablist">
+                      <li
+                        class="nav-item custom-tabs-header__item"
+                        role="presentation"
+                      >
+                        <a
+                          class="nav-link custom-tabs-header__item-link active"
+                          data-toggle="tab"
+                          href="#compare-tab_1"
+                          role="tab"
+                          aria-controls="home"
+                          aria-selected="true"
+                        >
+                          Матрасы <span>• 7 товаров</span>
+                        </a>
+                      </li>
+                      <li
+                        class="nav-item custom-tabs-header__item"
+                        role="presentation"
+                      >
+                        <a
+                          class="nav-link custom-tabs-header__item-link"
+                          data-toggle="tab"
+                          href="#compare-tab_2"
+                          role="tab"
+                          aria-controls="profile"
+                          aria-selected="false"
+                        >
+                          Мебель <span>• 2 товара</span>
+                        </a>
+                      </li>
+                      <li
+                        class="nav-item custom-tabs-header__item"
+                        role="presentation"
+                      >
+                        <a
+                          class="nav-link custom-tabs-header__item-link"
+                          data-toggle="tab"
+                          href="#compare-tab_3"
+                          role="tab"
+                          aria-controls="profile"
+                          aria-selected="false"
+                        >
+                          Аксессуары <span>• 6 товаров</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="compare-tab_1"
+                      role="tabpanel"
+                    >
+                      <div class="compare-container-wrap">
+                        <div class="compare-container">
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Анатомические
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p><b>Чехол:</b> хлопок.</p>
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Анатомические
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Анатомические
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Анатомические
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Анатомические
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Анатомические
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Анатомические
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Анатомические
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="compare-tab_2"
+                      role="tabpanel"
+                    >
+                      <div class="compare-container-wrap">
+                        <div class="compare-container">
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Мебель 1
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p><b>Чехол:</b> хлопок.</p>
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Мебель 2
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 165 × 250 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>35 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 120 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>90 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="compare-card">
+                            <div class="compare-card__product">
+                              <img
+                                src="assets/main-cat-1.png"
+                                alt="product image"
+                                class="compare-card__product-image"
+                              />
+                              <a href="#" class="compare-card__product-name">
+                                ASKONA TERAPIA Orient
+                              </a>
+                            </div>
+                            <div class="compare-card__control">
+                              <a
+                                class="compare-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                В корзину
+                              </a>
+
+                              <a
+                                href="#"
+                                class="compare-card__delete-btn text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                              >
+                                <i class="icon-icon_close_1"></i>
+                                <span> Удалить </span>
+                              </a>
+                            </div>
+                            <div
+                              class="compare-card__rating rating-stars compare-attribute compare-attribute--rating"
+                            >
+                              <span class="rating-stars__star-wrap">
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star active"
+                                ></i>
+                                <i
+                                  class="rating-stars__star icon-icon_star"
+                                ></i>
+                              </span>
+                              <span class="text-black-secondary">
+                                7 отзывов
+                              </span>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--type"
+                            >
+                              <a href="#" class="compare-card__type">
+                                Мебель 3
+                              </a>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--size"
+                            >
+                              <p>Двуспальный, 160 × 200 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--height"
+                            >
+                              <p>32 см</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--firmness"
+                            >
+                              <p>Средне-мягкий</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--base"
+                            >
+                              <p>Независимый пружинный блок EVS 1000</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute compare-attribute--load"
+                            >
+                              <p>До 150 кг</p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--composition"
+                            >
+                              <p>
+                                <b>Наполнитель:</b> латекс, кокосовая койра,
+                                термовойлок, спандбонд, пенополиуретан.
+                              </p>
+                              <p>
+                                <b>Основание:</b> независимый пружинный блок EVS
+                                1000
+                              </p>
+                            </div>
+                            <div
+                              class="compare-attribute compare-attribute--price"
+                            >
+                              <p><b>52 000 ₸</b></p>
+                            </div>
+                            <div class="compare-attribute-spacer"></div>
+                            <div
+                              class="accordion__linked-content"
+                              data-linked-id="attributes"
+                            >
+                              <div
+                                class="compare-attribute compare-attribute--filler"
+                              >
+                                <p>Пенополиуретан</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--weight"
+                              >
+                                <p>50 кг</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--cubature"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--packaging"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--color"
+                              ></div>
+                              <div
+                                class="compare-attribute compare-attribute--warranty"
+                              >
+                                <p>5 лет с момента покупки</p>
+                              </div>
+                              <div
+                                class="compare-attribute compare-attribute--manufacturer"
+                              >
+                                <p>Центр Матрасов, Казахстан</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="compare-tab_3"
+                      role="tabpanel"
+                    >
+                      tab
+                    </div>
+                  </div>
+                </section>
+                <section class="mbp-50">
+                  <h3 class="text-subtitle text-black-subtext mbp-20">
+                    Вас также может заинтересовать
+                  </h3>
+                  <div class="products-grid mobile-slider">
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзину</span>
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзине</span>
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзину</span>
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзине</span>
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзину</span>
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзине</span>
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзину</span>
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзине</span>
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-bottom-spot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- inject:footer:html -->
+    <!-- contents of html partials will be injected here -->
+    <!-- endinject -->
+    <script src="js/components.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

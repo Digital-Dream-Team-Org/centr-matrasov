@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/components.min.css" />
+    <link rel="stylesheet" href="libs/swiper.min.css" />
+    <link rel="stylesheet" href="libs/slick.css" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/media.min.css" />
+  </head>
+  <body>
+    <!-- inject:header:html -->
+    <!-- contents of html partials will be injected here -->
+    <!-- endinject -->
+    <main class="main-container">
+      <div class="container h-100">
+        <div class="main-container__content-wrap h-100">
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-top-spot"></div>
+            </div>
+          </div>
+          <div class="row h-100">
+            <div class="col-lg-8">
+              <div class="main-container__content">
+                <!-- <h1 class="text-title text-main mbp-20">
+                  Оплата
+                </h1> -->
+                <a
+                  class="text-small text-action d-block d-lg-none mbp-10 back-btn stepper__back-btn"
+                  href="#"
+                  data-stepper-id="stepper_1"
+                >
+                  <i class="icon-icon_arrows_1"></i>
+                  Вернуться назад
+                </a>
+                <section class="mbp-50">
+                  <div id="stepper_1" class="stepper">
+                    <div class="stepper-header">
+                      <a
+                        class="stepper-header__step stepper-header__step--static"
+                        href="../cart.html"
+                        data-step-index="1"
+                      >
+                        Корзина
+                      </a>
+                      <div class="stepper-header__divider d-none d-lg-block">
+                        <span class="stepper-header__divider-arrow-body"></span>
+                        <i class="icon-icon_next"></i>
+                      </div>
+                      <a
+                        class="stepper-header__step active"
+                        href="#"
+                        data-step-index="2"
+                      >
+                        Адрес и способ доставки
+                      </a>
+                      <div class="stepper-header__divider d-none d-lg-block">
+                        <span class="stepper-header__divider-arrow-body"></span>
+                        <i class="icon-icon_next"></i>
+                      </div>
+                      <a
+                        class="stepper-header__step"
+                        href="#"
+                        data-step-index="3"
+                      >
+                        Оформление заказа
+                      </a>
+                    </div>
+                    <div
+                      class="cart-page__mobile-top-sidebar-spot d-none"
+                    ></div>
+                    <form class="checkout-form mbp-30">
+                      <div class="stepper-tab" data-tab-index="2">
+                        <div class="checkout-form--slim-container">
+                          <h3 class="text-subtitle text-black-subtext mbp-20">
+                            Выберите способ доставки
+                          </h3>
+                          <div
+                            class="checkout-form__delivery-types-wrap mbp-50"
+                          >
+                            <div class="checkout-form__delivery-types">
+                              <div class="custom-control custom-radio">
+                                <input
+                                  type="radio"
+                                  id="radio-delivery_home"
+                                  name="delivery_type"
+                                  class="custom-control-input"
+                                  value="home"
+                                  checked
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="radio-delivery_home"
+                                >
+                                  Доставка на дом
+                                </label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input
+                                  type="radio"
+                                  id="radio-delivery__pickup"
+                                  name="delivery_type"
+                                  class="custom-control-input"
+                                  value="pickup"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="radio-delivery__pickup"
+                                >
+                                  Доставка в пункт самовывоза (бесплатно)
+                                </label>
+                              </div>
+                            </div>
+                            <div
+                              class="checkout-form__delivery-type-hint checkout-form__delivery-type-hint--1"
+                            >
+                              <p
+                                class="text-small text-uppercase font-weight-bold text-black-secondary mbp-10"
+                              >
+                                Обратите внимание
+                              </p>
+                              <p>
+                                Доставка курьером доступна только в городах, в
+                                которых расположены наши филиалы. Во все прочие
+                                города доставка оплачивается отдельно.
+                              </p>
+                              <p>
+                                Более подробно об условиях доставки можно
+                                прочитать
+                                <a href="#">здесь</a>.
+                              </p>
+                            </div>
+                          </div>
+
+                          <h3 class="text-subtitle text-black-subtext mbp-20">
+                            Уточните данные для доставки
+                          </h3>
+                          <div class="checkout-form__user-info">
+                            <p
+                              class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                            >
+                              Получатель
+                            </p>
+                            <div class="form-group mbp-20">
+                              <label for="user_name">ФИО получателя</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_name"
+                                name="name"
+                                placeholder="Досымов Ержан Кемелевич"
+                              />
+                            </div>
+                            <div class="phone-confirmation mbp-20">
+                              <div
+                                class="form-group phone-confirmation__phone-group"
+                              >
+                                <label for="user_name">Номер телефона</label>
+                                <input
+                                  type="tel"
+                                  class="form-control"
+                                  id="user_phone"
+                                  name="phone"
+                                  placeholder="+7 777 123 4567"
+                                />
+                                <button
+                                  type="button"
+                                  class="text-action phone-confirmation__phone-group-confirm-btn"
+                                >
+                                  <span>Подтвердить</span>
+                                  <i class="icon-icon_arrows_1"></i>
+                                </button>
+                                <span
+                                  class="phone-confirmation__phone-group-success-msg"
+                                >
+                                  Подтверждено <i class="icon-icon_ok_1"></i>
+                                </span>
+                                <small>
+                                  Желательно мобильный. Необходимо подтверждение
+                                </small>
+                              </div>
+                              <div
+                                class="form-group phone-confirmation__code-group"
+                              >
+                                <label for="user_name">Код подтверждения</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="phone_confirmation_code"
+                                  name="phone_confirmation_code"
+                                  placeholder="Введите код из СМС"
+                                />
+                                <button
+                                  type="button"
+                                  class="text-action phone-confirmation__code-group-confirm-btn"
+                                >
+                                  <span>Подтвердить</span>
+                                  <i class="icon-icon_arrows_1"></i>
+                                </button>
+                                <small
+                                  class="phone-confirmation__code-group-error-msg"
+                                >
+                                  Вы ввели неверный код
+                                </small>
+                                <!-- <small>
+                                  Повторить запрос можно через 58 секунд
+                                </small> -->
+                                <small>
+                                  <a href="#"> Запросить смс-код еще раз </a>
+                                </small>
+                              </div>
+                            </div>
+                            <div class="form-group mbp-40">
+                              <label for="user_name">Электронная почта</label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="user_email"
+                                name="email"
+                                placeholder="name@mail.ru"
+                              />
+                              <small>
+                                Мы не рассылаем спам. На почту будут приходить
+                                отчеты по вашему заказу
+                              </small>
+                            </div>
+                          </div>
+                          <div
+                            class="checkout-form__delivery-types-tab checkout-form__delivery-types-tab-address active"
+                          >
+                            <p
+                              class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                            >
+                              Адрес доставки
+                            </p>
+                            <div class="form-group mbp-20">
+                              <label for="user_city">Город</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_city"
+                                name="city"
+                                placeholder="Алматы"
+                              />
+                              <small>
+                                От города зависит стоимость доставки.
+                                <a href="#">Подробнее об условиях доставки</a>
+                              </small>
+                            </div>
+                            <div class="form-group mbp-20">
+                              <label for="user_street">Улица</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_street"
+                                name="street"
+                                placeholder="ул. Иманова"
+                              />
+                            </div>
+                            <div class="checkout-form__grid">
+                              <div class="checkout-form__grid-50">
+                                <div class="form-group">
+                                  <label for="user_house">Дом (строение)</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="user_house"
+                                    name="house"
+                                    placeholder="9Б"
+                                  />
+                                </div>
+                              </div>
+                              <div class="checkout-form__grid-50">
+                                <div class="form-group">
+                                  <label for="user_apartment">Квартира</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="user_apartment"
+                                    name="apartment"
+                                    placeholder="49"
+                                  />
+                                  <small> Если необходимо </small>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="checkout-form__grid mbp-20">
+                              <div class="checkout-form__grid-33">
+                                <div class="form-group">
+                                  <label for="user_porch">Подъезд</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="user_porch"
+                                    name="porch"
+                                    placeholder="2"
+                                  />
+                                  <small> Если необходимо </small>
+                                </div>
+                              </div>
+                              <div class="checkout-form__grid-33">
+                                <div class="form-group">
+                                  <label for="user_floor">Этаж</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="user_floor"
+                                    name="floor"
+                                    placeholder="9"
+                                  />
+                                  <small> Если необходимо </small>
+                                </div>
+                              </div>
+                              <div class="checkout-form__grid-33">
+                                <div class="form-group">
+                                  <label for="user_intercom">Домофон</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="user_intercom"
+                                    name="intercom"
+                                    placeholder=""
+                                  />
+                                  <small> Если необходимо </small>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group mbp-40 mbp-lg-50">
+                              <label for="user_commentary">Комментарий</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_commentary"
+                                name="commentary"
+                                placeholder="Есть ли у вас особые пожелания?"
+                              />
+                              <small> Не обязательно </small>
+                            </div>
+
+                            <h3 class="text-subtitle text-black-subtext mbp-20">
+                              Дополнительные услуги
+                            </h3>
+                            <div class="custom-control custom-checkbox mbp-10">
+                              <input
+                                type="checkbox"
+                                id="checkbox-take_out_old"
+                                name="take_out_old"
+                                class="custom-control-input"
+                                value="type_pickup"
+                              />
+                              <label
+                                class="custom-control-label"
+                                for="checkbox-take_out_old"
+                              >
+                                Вывести старый матрас
+                              </label>
+                            </div>
+                            <p>
+                              Вы дополнительно можете заказать вывоз вашего
+                              старого матраса. При доставке нового матраса мы
+                              можем самостоятельно вывезти Ваш старый матрас.
+                            </p>
+                          </div>
+                          <div
+                            class="checkout-form__delivery-types-tab checkout-form__delivery-types-tab-pickup"
+                          >
+                            <p
+                              class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                            >
+                              Пункты самовывоза
+                            </p>
+                            <div
+                              class="checkout-form__region-dropdown dropdown mbp-20"
+                            >
+                              <a
+                                class="dropdown-toggle text-decoration-none"
+                                href="#"
+                                id="checkoutRegionDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <span class="text-black-secondary">
+                                  <i class="icon-icon_location"></i>
+                                  Ваш регион
+                                </span>
+                                <span
+                                  class="checkout-form__region-dropdown-value"
+                                >
+                                  Нур-Султан
+                                </span>
+                              </a>
+                              <div
+                                class="dropdown-menu"
+                                aria-labelledby="checkoutRegionDropdown"
+                              >
+                                <a
+                                  class="dropdown-item checkout-form__region-dropdown-btn"
+                                  href="#"
+                                  data-region-id="1"
+                                >
+                                  Нур-Султан
+                                </a>
+                                <a
+                                  class="dropdown-item checkout-form__region-dropdown-btn"
+                                  href="#"
+                                  data-region-id="2"
+                                >
+                                  Астана
+                                </a>
+                              </div>
+                              <input
+                                class="checkout-form__region-input"
+                                type="hidden"
+                                name="region"
+                                value="Нур-Султан"
+                              />
+                            </div>
+
+                            <div class="form-group form-select-group mbp-20">
+                              <label>Адреса пунктов самомвывоза</label>
+
+                              <div
+                                class="form-select-group__select active"
+                                data-region-id="1"
+                              >
+                                <button
+                                  type="button"
+                                  class="form-select-group__select-btn"
+                                >
+                                  ул. Наурызбай батыра, дом 7Б, ТЦ Атриум, 1-ый
+                                  этаж, бутик 28.
+                                </button>
+                                <a href="#">Схема проезда</a>
+                                <div class="form-select-group__select-hint">
+                                  Ежедневно с 10:00 до 20:00, перерыв с 14:00 до
+                                  15:00
+                                </div>
+                                <input
+                                  class="form-select-group__select-input"
+                                  type="radio"
+                                  name="pickup_address"
+                                  value="ул. Наурызбай батыра, дом 7Б, ТЦ Атриум, 1-ый этаж, бутик 28."
+                                  checked
+                                />
+                              </div>
+                              <div
+                                class="form-select-group__select"
+                                data-region-id="1"
+                              >
+                                <button
+                                  type="button"
+                                  class="form-select-group__select-btn"
+                                >
+                                  мкр. Кайрат, дом 182 к6, ТД Көк-төбе, 1 этаж.
+                                </button>
+                                <a href="#">Схема проезда</a>
+                                <div class="form-select-group__select-hint">
+                                  Понедельник-пятница с 9:00 до 18:00, перерыв с
+                                  13:00 до 14:30
+                                </div>
+                                <input
+                                  class="form-select-group__select-input"
+                                  type="radio"
+                                  name="pickup_address"
+                                  value="мкр. Кайрат, дом 182 к6, ТД Көк-төбе, 1 этаж."
+                                />
+                              </div>
+                              <div
+                                class="form-select-group__select"
+                                data-region-id="1"
+                              >
+                                <button
+                                  type="button"
+                                  class="form-select-group__select-btn"
+                                >
+                                  мкр. 2, дом 47А, БЦ Орда, каб. 1 (отдельный
+                                  вход с улицы со стороны парковки).
+                                </button>
+                                <a href="#">Схема проезда</a>
+                                <div class="form-select-group__select-hint">
+                                  Ежедневно с 8:00 до 19:00, перерыв с 12:00 до
+                                  13:00
+                                </div>
+                                <input
+                                  class="form-select-group__select-input"
+                                  type="radio"
+                                  name="pickup_address"
+                                  value="мкр. 2, дом 47А, БЦ Орда, каб. 1 (отдельный вход с улицы со стороны парковки)."
+                                />
+                              </div>
+                              <div
+                                class="form-select-group__select"
+                                data-region-id="1"
+                              >
+                                <button
+                                  type="button"
+                                  class="form-select-group__select-btn"
+                                >
+                                  бул. Ғарышкерлер, дом 17 (отдельный вход с
+                                  улицы).
+                                </button>
+                                <a href="#">Схема проезда</a>
+                                <div class="form-select-group__select-hint">
+                                  Ежедневно с 10:00 до 20:00, без перерывов
+                                </div>
+                                <input
+                                  class="form-select-group__select-input"
+                                  type="radio"
+                                  name="pickup_address"
+                                  value="бул. Ғарышкерлер, дом 17 (отдельный вход с улицы)."
+                                />
+                              </div>
+                              <div
+                                class="form-select-group__select"
+                                data-region-id="2"
+                              >
+                                <button
+                                  type="button"
+                                  class="form-select-group__select-btn"
+                                >
+                                  Астана тестовый адрес
+                                </button>
+                                <a href="#">Схема проезда</a>
+                                <div class="form-select-group__select-hint">
+                                  Ежедневно с 10:00 до 20:00, без перерывов
+                                </div>
+                                <input
+                                  class="form-select-group__select-input"
+                                  type="radio"
+                                  name="pickup_address"
+                                  value="Астана тестовый адрес"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="user_commentary">Комментарий</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="user_commentary"
+                                name="commentary"
+                                placeholder="Есть ли у вас особые пожелания?"
+                              />
+                              <small> Не обязательно </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stepper-tab" data-tab-index="3">
+                        <div class="checkout-form--slim-container">
+                          <h3 class="text-subtitle text-black-subtext mbp-20">
+                            Выберите способ оплаты
+                          </h3>
+                          <div class="checkout-form__payment-types-wrap mbp-50">
+                            <div class="checkout-form__payment-types">
+                              <div class="custom-control custom-radio">
+                                <input
+                                  type="radio"
+                                  id="radio-payment_online"
+                                  name="payment_type"
+                                  class="custom-control-input"
+                                  value="online"
+                                  checked
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="radio-payment_online"
+                                >
+                                  Онлайн оплата
+                                </label>
+                              </div>
+                              <div class="custom-control custom-radio">
+                                <input
+                                  type="radio"
+                                  id="radio-payment_on_delivery"
+                                  name="payment_type"
+                                  class="custom-control-input"
+                                  value="on_delivery"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="radio-payment_on_delivery"
+                                >
+                                  Оплата при получении
+                                </label>
+                              </div>
+                            </div>
+                            <div
+                              class="checkout-form__payment-type-hint checkout-form__payment-type-hint--1"
+                            >
+                              <p
+                                class="text-small text-uppercase font-weight-bold text-black-secondary mbp-10"
+                              >
+                                Доступные способы оплаты
+                              </p>
+                              <div class="d-flex flex-wrap mbp-30">
+                                <img
+                                  class="mrp-20 mbp-10"
+                                  src="assets/p1.png"
+                                  alt="payment-icon"
+                                />
+                                <img
+                                  class="mrp-20 mbp-10"
+                                  src="assets/p2.png"
+                                  alt="payment-icon"
+                                />
+                                <img
+                                  class="mrp-20 mbp-10"
+                                  src="assets/p3.png"
+                                  alt="payment-icon"
+                                />
+                                <img
+                                  class="mrp-20 mbp-10"
+                                  src="assets/p4.png"
+                                  alt="payment-icon"
+                                />
+                                <img
+                                  class="mrp-20 mbp-10"
+                                  src="assets/p5.png"
+                                  alt="payment-icon"
+                                />
+                                <img
+                                  class="mbp-10"
+                                  src="assets/p6.png"
+                                  alt="payment-icon"
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  class="mrp-10"
+                                  src="assets/p7.png"
+                                  alt="payment-icon"
+                                />
+                                <span class="text-black-secondary">
+                                  Безопасность транзакций гарантирует
+                                  <b>Казком</b>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h3 class="text-subtitle text-black-subtext mbp-20">
+                          Детали заказа
+                        </h3>
+                        <div class="checkout-details">
+                          <div class="checkout-details__header-delivery-type">
+                            Способ доставки
+                          </div>
+                          <div
+                            class="checkout-details__header-delivery-address"
+                          >
+                            Адрес доставки
+                          </div>
+                          <div class="checkout-details__header-delivery-price">
+                            Стоимость доставки
+                          </div>
+                          <div class="checkout-details__table-delivery-type">
+                            Доставка в пункт самовывоза
+
+                            <div class="mtp-10">
+                              <a
+                                class="text-small back-btn stepper__back-btn"
+                                href="#"
+                                data-stepper-id="stepper_1"
+                              >
+                                <i class="icon-icon_arrows_1"></i> Изменить
+                              </a>
+                            </div>
+                          </div>
+                          <div class="checkout-details__table-delivery-address">
+                            <div class="checkout-details__table-delivery-city">
+                              г. Нур-Султан
+                            </div>
+                            <div>
+                              мкр. Кайрат, дом 182 к6, ТД Көк-төбе, 1 этаж
+                            </div>
+                            <div class="mtp-10">
+                              <a
+                                class="text-small back-btn d-inline-flex mrp-20 stepper__back-btn"
+                                href="#"
+                                data-stepper-id="stepper_1"
+                              >
+                                <i class="icon-icon_arrows_1"></i> Изменить
+                              </a>
+                              <a class="text-small d-inline-flex" href="#">
+                                Схема проезда
+                              </a>
+                            </div>
+                          </div>
+                          <div class="checkout-details__table-delivery-price">
+                            Бесплатная доставка
+                          </div>
+                        </div>
+                        <hr class="mtp-40 mbp-40" />
+                        <div class="cart-table-header">
+                          <div
+                            class="text-small text-black-secondary text-uppercase font-weight-bold"
+                          >
+                            Состав заказа
+                          </div>
+                          <div
+                            class="text-small text-black-secondary cart-table-header__item-price"
+                          >
+                            Цена
+                          </div>
+                          <div
+                            class="text-small text-black-secondary cart-table-header__item-quantity"
+                          >
+                            Количество
+                          </div>
+                          <div
+                            class="text-small text-black-secondary cart-table-header__item-total"
+                          >
+                            Сумма
+                          </div>
+                        </div>
+                        <div class="cart-table">
+                          <div class="cart-table__item">
+                            <div class="cart-table__item-m-image-container">
+                              <div class="cart-table__item-image-area">
+                                <a href="#">
+                                  <div class="cart-table__item-image-wrap">
+                                    <img
+                                      class="cart-table__item-image"
+                                      src="assets/product-img-2.png"
+                                      alt="pic"
+                                    />
+                                    <div
+                                      class="cart-table__item-label badge-label"
+                                    >
+                                      Наматрасник в подарок
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="cart-table__item-actions">
+                                <div
+                                  class="cart-table__item-actions-panel-controls"
+                                >
+                                  <a
+                                    href="#"
+                                    class="text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                                  >
+                                    <i class="icon-icon_close_1"></i>
+                                    <span> Удалить </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-main">
+                              <div>
+                                <a
+                                  class="text-small text-black-secondary cart-table__item-category"
+                                  href="#"
+                                >
+                                  Матрас анатомический
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href="#"
+                                  class="cart-table__item-title text-black"
+                                >
+                                  Элитный матрас «SULTAN»
+                                  <span
+                                    class="text-small text-black-secondary cart-table__item-size"
+                                  >
+                                    160 × 200 см
+                                  </span>
+                                </a>
+                              </div>
+                              <div>
+                                <div class="cart-table__item-rate rating-stars">
+                                  <span class="rating-stars__star-wrap">
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star"
+                                    ></i>
+                                  </span>
+                                  <span class="text-small text-black-secondary">
+                                    7 отзывов
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-price">242 000 ₸</div>
+                            <div class="cart-table__item-quantity-value">2</div>
+                            <div class="cart-table__item-total">
+                              <div class="font-weight-bold">484 000 ₸</div>
+                              <div class="cart-table__item-discount">
+                                <div
+                                  class="text-small text-black-subtext cart-table__item-discount-title"
+                                >
+                                  Вы экономите:
+                                </div>
+                                <div
+                                  class="text-small text-attention font-weight-bold cart-table__item-value"
+                                >
+                                  294 000 ₸
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-divider"></div>
+                          </div>
+                          <div class="cart-table__item">
+                            <div class="cart-table__item-m-image-container">
+                              <div class="cart-table__item-image-area">
+                                <a href="#">
+                                  <div class="cart-table__item-image-wrap">
+                                    <img
+                                      class="cart-table__item-image"
+                                      src="assets/product-img-2.png"
+                                      alt="pic"
+                                    />
+                                    <div
+                                      class="cart-table__item-label badge-label"
+                                    >
+                                      Наматрасник в подарок
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="cart-table__item-actions">
+                                <div
+                                  class="cart-table__item-actions-panel-controls"
+                                >
+                                  <a
+                                    href="#"
+                                    class="text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                                  >
+                                    <i class="icon-icon_close_1"></i>
+                                    <span> Удалить </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-main">
+                              <div>
+                                <a
+                                  class="text-small text-black-secondary cart-table__item-category"
+                                  href="#"
+                                >
+                                  Матрас анатомический
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href="#"
+                                  class="cart-table__item-title text-black"
+                                >
+                                  Элитный матрас «SULTAN»
+                                  <span
+                                    class="text-small text-black-secondary cart-table__item-size"
+                                  >
+                                    160 × 200 см
+                                  </span>
+                                </a>
+                              </div>
+                              <div>
+                                <div class="cart-table__item-rate rating-stars">
+                                  <span class="rating-stars__star-wrap">
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star"
+                                    ></i>
+                                  </span>
+                                  <span class="text-small text-black-secondary">
+                                    7 отзывов
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-price">242 000 ₸</div>
+                            <div class="cart-table__item-quantity-value">2</div>
+                            <div class="cart-table__item-total">
+                              <div class="font-weight-bold">484 000 ₸</div>
+                              <div class="cart-table__item-discount">
+                                <div
+                                  class="text-small text-black-subtext cart-table__item-discount-title"
+                                >
+                                  Вы экономите:
+                                </div>
+                                <div
+                                  class="text-small text-attention font-weight-bold cart-table__item-value"
+                                >
+                                  294 000 ₸
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-divider"></div>
+                          </div>
+                          <div class="cart-table__item">
+                            <div class="cart-table__item-m-image-container">
+                              <div class="cart-table__item-image-area">
+                                <a href="#">
+                                  <div class="cart-table__item-image-wrap">
+                                    <img
+                                      class="cart-table__item-image"
+                                      src="assets/product-img-2.png"
+                                      alt="pic"
+                                    />
+                                    <div
+                                      class="cart-table__item-label badge-label"
+                                    >
+                                      Наматрасник в подарок
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="cart-table__item-actions">
+                                <div
+                                  class="cart-table__item-actions-panel-controls"
+                                >
+                                  <a
+                                    href="#"
+                                    class="text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                                  >
+                                    <i class="icon-icon_close_1"></i>
+                                    <span> Удалить </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-main">
+                              <div>
+                                <a
+                                  class="text-small text-black-secondary cart-table__item-category"
+                                  href="#"
+                                >
+                                  Матрас анатомический
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href="#"
+                                  class="cart-table__item-title text-black"
+                                >
+                                  Элитный матрас «SULTAN»
+                                  <span
+                                    class="text-small text-black-secondary cart-table__item-size"
+                                  >
+                                    160 × 200 см
+                                  </span>
+                                </a>
+                              </div>
+                              <div>
+                                <div class="cart-table__item-rate rating-stars">
+                                  <span class="rating-stars__star-wrap">
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star"
+                                    ></i>
+                                  </span>
+                                  <span class="text-small text-black-secondary">
+                                    7 отзывов
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-price">242 000 ₸</div>
+                            <div class="cart-table__item-quantity-value">2</div>
+                            <div class="cart-table__item-total">
+                              <div class="font-weight-bold">484 000 ₸</div>
+                              <div class="cart-table__item-discount">
+                                <div
+                                  class="text-small text-black-subtext cart-table__item-discount-title"
+                                >
+                                  Вы экономите:
+                                </div>
+                                <div
+                                  class="text-small text-attention font-weight-bold cart-table__item-value"
+                                >
+                                  294 000 ₸
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-divider"></div>
+                          </div>
+                          <div class="cart-table__item">
+                            <div class="cart-table__item-m-image-container">
+                              <div class="cart-table__item-image-area">
+                                <a href="#">
+                                  <div class="cart-table__item-image-wrap">
+                                    <img
+                                      class="cart-table__item-image"
+                                      src="assets/product-img-2.png"
+                                      alt="pic"
+                                    />
+                                    <div
+                                      class="cart-table__item-label badge-label"
+                                    >
+                                      Наматрасник в подарок
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="cart-table__item-actions">
+                                <div
+                                  class="cart-table__item-actions-panel-controls"
+                                >
+                                  <a
+                                    href="#"
+                                    class="text-attention cart-table__item-actions-panel-control-btn cart-table__item-delete-btn"
+                                  >
+                                    <i class="icon-icon_close_1"></i>
+                                    <span> Удалить </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-main">
+                              <div>
+                                <a
+                                  class="text-small text-black-secondary cart-table__item-category"
+                                  href="#"
+                                >
+                                  Матрас анатомический
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href="#"
+                                  class="cart-table__item-title text-black"
+                                >
+                                  Элитный матрас «SULTAN»
+                                  <span
+                                    class="text-small text-black-secondary cart-table__item-size"
+                                  >
+                                    160 × 200 см
+                                  </span>
+                                </a>
+                              </div>
+                              <div>
+                                <div class="cart-table__item-rate rating-stars">
+                                  <span class="rating-stars__star-wrap">
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star active"
+                                    ></i>
+                                    <i
+                                      class="rating-stars__star icon-icon_star"
+                                    ></i>
+                                  </span>
+                                  <span class="text-small text-black-secondary">
+                                    7 отзывов
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-price">242 000 ₸</div>
+                            <div class="cart-table__item-quantity-value">2</div>
+                            <div class="cart-table__item-total">
+                              <div class="font-weight-bold">484 000 ₸</div>
+                              <div class="cart-table__item-discount">
+                                <div
+                                  class="text-small text-black-subtext cart-table__item-discount-title"
+                                >
+                                  Вы экономите:
+                                </div>
+                                <div
+                                  class="text-small text-attention font-weight-bold cart-table__item-value"
+                                >
+                                  294 000 ₸
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cart-table__item-divider"></div>
+                          </div>
+                        </div>
+                        <div class="text-left text-lg-right mtp-30">
+                          <div>
+                            <span class="text-black-secondary mrp-20">
+                              Вы экономите
+                            </span>
+                            <span class="text-attention font-weight-bold">
+                              −348 577 ₸
+                            </span>
+                          </div>
+                          <div>
+                            <span class="text-black-secondary mrp-20">
+                              Итоговая сумма к оплате
+                            </span>
+                            <span class="text-subtitle">740 820 ₸</span>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </section>
+                <section>
+                  <div class="d-flex flex-column flex-lg-row">
+                    <div class="benefits-card text-center">
+                      <i
+                        class="benefits-card__icon icon-icon_delivery_2 text-action-dark"
+                      ></i>
+                      <p class="text-subtitle">Доставка по всему Казахстану</p>
+                      <p class="text-subtext">
+                        Наши салоны и пункты самовывоза расположены в 13 городах
+                        по всему Казахстану.
+                      </p>
+                      <a href="#" class="text-small text-action"
+                        >Подробнее об условиях доставки
+                      </a>
+                    </div>
+                    <div class="benefits-card text-center">
+                      <i
+                        class="benefits-card__icon icon-icon_cart text-action-dark"
+                      ></i>
+                      <p class="text-subtitle">
+                        Покупайте <br />
+                        не выходя из дома
+                      </p>
+                      <p class="text-subtext">
+                        Вам больше не нужно обходить магазины города! Все
+                        необзодимое для здорового сна у вас в кармане.
+                      </p>
+                      <a href="#" class="text-small text-action">
+                        Как выбрать матрас?
+                      </a>
+                    </div>
+                    <div class="benefits-card text-center">
+                      <i
+                        class="benefits-card__icon icon-icon_security text-action-dark"
+                      ></i>
+                      <p class="text-subtitle">
+                        Безопасная <br />
+                        онлайн оплата
+                      </p>
+                      <p class="text-subtext">
+                        Можете оплатить любой картой Visa или MasterCard онлайн
+                        или при доставке в пункте самовывоза
+                      </p>
+                      <a href="#" class="text-small text-action">
+                        Подробнее об условиях онлайн оплаты
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section class="mbp-50">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="banner-card banner-card--1">
+                        <p class="banner-card__title text-subtitle">
+                          У вас возникли вопросы?
+                        </p>
+                        <div class="banner-card__content">
+                          <p class="text-black-subtext">
+                            Звоните в наш call-центр, вы ответим на все ваши
+                            вопросы.
+                          </p>
+                          <p>
+                            <span
+                              class="text-small text-black-subtext font-weight-bold"
+                              >с 9:00 до 18:00</span
+                            >
+                            <span class="online-status-badge">
+                              <i class="online-status-badge__icon"></i>
+                              Сейчас онлайн
+                            </span>
+                          </p>
+                        </div>
+                        <a href="#" class="text-title text-main mb-0">
+                          +7 777 458 4569
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="banner-card banner-card--2">
+                        <p class="banner-card__title text-subtitle">
+                          Хотите заказать матрас нестандартной формы или
+                          размера?
+                        </p>
+                        <div class="banner-card__content">
+                          <p class="text-black-subtext">
+                            Мы можем произвести матрас точно по вашим замерам!
+                          </p>
+                        </div>
+                        <a
+                          href="#"
+                          class="text-small text-action mb-0 open-custom-mattress-form-popup"
+                        >
+                          Заказать нестандартный матрас
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-2 h-100">
+              <div class="sidebar-initial-spot">
+                <div class="sidebar-initial-spot">
+                  <div class="sidebar cart-page-sidebar">
+                    <div class="cart-page-sidebar__top-wrap">
+                      <div class="cart-page-sidebar__top">
+                        <div
+                          class="cart-page-sidebar__header d-flex justify-content-between mbp-20"
+                        >
+                          <div
+                            class="cart-page-sidebar__title text-small text-black-secondary font-weight-bold text-uppercase"
+                          >
+                            Корзина
+                          </div>
+                        </div>
+                        <div class="cart-page-sidebar__price mbp-20">
+                          <div
+                            class="d-flex justify-content-between cart-page-sidebar__price-subtotal"
+                          >
+                            <div class="text-small text-black-subtext">
+                              8 товаров
+                            </div>
+                            <div
+                              class="text-normal text-black font-weight-bold cart-page-sidebar__price-subtotal-value"
+                            >
+                              1 000 000 ₸
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between cart-page-sidebar__price-discount"
+                          >
+                            <div class="text-small text-black-subtext">
+                              Вы экономите
+                            </div>
+                            <div
+                              class="text-normal text-attention font-weight-bold cart-page-sidebar__price-discount-value"
+                            >
+                              -348 000 ₸
+                            </div>
+                          </div>
+                          <hr class="cart-page-sidebar__divider" />
+                          <div
+                            class="d-flex justify-content-between align-items-center cart-page-sidebar__price-total"
+                          >
+                            <div class="text-small text-black-subtext">
+                              К оплате
+                            </div>
+                            <div
+                              class="text-subtitle text-black font-weight-bold cart-page-sidebar__price-subtotal-value"
+                            >
+                              740 820 ₸
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mbp-10">
+                          <!-- При успехе добавить к форме класс cart-page-sidebar__coupon-form--success -->
+                          <!-- При ошибке добавить к форме класс cart-page-sidebar__coupon-form--invalid -->
+                          <form
+                            action=""
+                            class="cart-page-sidebar__coupon-form"
+                          >
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control form-control-sm cart-page-sidebar__coupon-form-input"
+                                placeholder="Промо-код"
+                                required
+                              />
+                              <button
+                                type="submit"
+                                class="text-small text-action cart-page-sidebar__coupon-form-submit"
+                              >
+                                Добавить <i class="icon-icon_arrows_1"></i>
+                              </button>
+                              <span
+                                class="text-small cart-page-sidebar__coupon-form-success-msg"
+                              >
+                                Подтверждено <i class="icon-icon_ok_1"></i>
+                              </span>
+                              <small
+                                class="cart-page-sidebar__coupon-form-error-msg"
+                              >
+                                Такое промо-кода не существует
+                              </small>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="cart-page-sidebar__control-panel">
+                          <a
+                            href="#"
+                            class="btn btn-main cart-page-sidebar__checkout w-100 mbp-10 stepper__next-btn"
+                            data-stepper-id="stepper_1"
+                          >
+                            Оформить заказ
+                          </a>
+                          <div
+                            class="text-center text-small text-black-secondary"
+                          >
+                            Номер заказа: 485265
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-page-floating-bar-wrap">
+              <div class="cart-page-floating-bar">
+                <a
+                  class="btn btn-outline-black-lines cart-page-floating-bar__back-btn stepper__back-btn"
+                  href="#"
+                  data-stepper-id="stepper_1"
+                >
+                  <i class="icon-icon_arrows_1"></i>
+                </a>
+                <a
+                  class="btn btn-main cart-page-floating-bar__order-btn stepper__next-btn"
+                  href="#"
+                  data-stepper-id="stepper_1"
+                >
+                  Оформить заказ <i class="icon-icon_arrows_1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-bottom-spot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- inject:footer:html -->
+    <!-- contents of html partials will be injected here -->
+    <!-- endinject -->
+    <script src="js/components.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

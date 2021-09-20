@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cabinet - History</title>
+    <link rel="stylesheet" href="css/components.min.css" />
+    <link rel="stylesheet" href="libs/swiper.min.css" />
+    <link rel="stylesheet" href="libs/slick.css" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/media.min.css" />
+  </head>
+  <body>
+    <!-- inject:header:html -->
+    <!-- contents of html partials will be injected here -->
+    <!-- endinject -->
+    <main class="main-container">
+      <div class="container h-100">
+        <div class="main-container__content-wrap h-100">
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-top-spot"></div>
+            </div>
+          </div>
+          <div class="row h-100">
+            <div class="d-none d-lg-block col-lg-2 h-100">
+              <div class="sidebar-initial-spot">
+                <div class="sidebar">
+                  <p
+                    class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                  >
+                    Разделы
+                  </p>
+                  <nav>
+                    <ul class="navbar-nav sidebar-nav">
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Обзор</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Личные данные</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">История заказов</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link">Ожидаемые товары</a>
+                      </li>
+                      <li class="navbar-item">
+                        <a href="#" class="navbar-link active"> Мои отзывы </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <hr class="mtp-20 mbp-20 border-black-lines" />
+                  <a href="#" class="navbar-link text-black-secondary">Выйти</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="main-container__content">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="#">Главная страница</a>
+                    </li>
+                  </ol>
+                </nav>
+                <h1 class="text-title text-main mbp-20 mbp-lg-40">
+                  История заказов
+                </h1>
+                <div class="d-flex mbp-20 d-lg-none">
+                  <span class="text-small text-black-secondary mrp-10">
+                    Разделы
+                  </span>
+                  <ul class="navbar-nav text-small">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle text-action p-0"
+                        href="#"
+                        id="cabinetMobileNav"
+                        role="dutton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        История заказов
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="cabinetMobileNav"
+                      >
+                        <a class="dropdown-item" href="#"> Обзор </a>
+                        <a class="dropdown-item" href="#"> Личные данные </a>
+                        <a class="dropdown-item" href="#"> История заказов </a>
+                        <a class="dropdown-item" href="#"> Ожидаемые товары </a>
+                        <a class="dropdown-item" href="#"> Мои отзывы </a>
+                        <a class="dropdown-item" href="#"> Выйти </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <section class="mbp-50">
+                  <div
+                    class="cabinet-order-card cabinet-order-card--current-order"
+                  >
+                    <div class="cabinet-order-card__summary">
+                      <div
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-5"
+                      >
+                        Текущий заказ
+                      </div>
+                      <div class="text-small text-black-subtext mbp-20">
+                        Номер заказа:
+                        <span class="font-weight-bold">02-200005489</span>
+                      </div>
+                      <div
+                        class="text-small text-black-subtext mt-auto d-flex justify-content-between align-items-baseline"
+                      >
+                        <span>Общая сумма</span>
+                        <span class="text-subtitle font-weight-bold">
+                          740 820 ₸
+                        </span>
+                      </div>
+                    </div>
+                    <div class="cabinet-order-card__details">
+                      <div class="cabinet-order-card__details-status">
+                        <p
+                          class="text-small text-black-secondary text-uppercase font-weight-bold mbp-20"
+                        >
+                          Процесс выполнения заказа
+                        </p>
+                        <!-- 
+                          В зависимости от статуса нужно добавлять в cabinet-order-card__process следующие классы:
+                          Обработка заказа - cabinet-order-card__process--processing, 
+                          Формирование заказа - cabinet-order-card__process--forming, 
+                          Доставка заказа - cabinet-order-card__process--delivery
+                          Эти классы будут прокручивать контейнер на нужную позицию в мобильной версии
+                         -->
+                        <div class="cabinet-order-card__process-wrap">
+                          <div
+                            class="cabinet-order-card__process cabinet-order-card__process--processing"
+                          >
+                            <div
+                              class="cabinet-order-card__process-step active"
+                            >
+                              <div
+                                class="cabinet-order-card__process-step-icon-wrap"
+                              >
+                                <i class="icon-icon_ok_2"></i>
+                              </div>
+                              <div
+                                class="cabinet-order-card__process-step-text"
+                              >
+                                Обработка заказа
+                              </div>
+                            </div>
+                            <div class="cabinet-order-card__process-step">
+                              <div
+                                class="cabinet-order-card__process-step-icon-wrap"
+                              >
+                                <i class="icon-icon_process"></i>
+                              </div>
+                              <div
+                                class="cabinet-order-card__process-step-text"
+                              >
+                                Формирование заказа
+                              </div>
+                            </div>
+                            <div class="cabinet-order-card__process-step">
+                              <div
+                                class="cabinet-order-card__process-step-icon-wrap"
+                              >
+                                <i class="icon-icon_ok_2"></i>
+                              </div>
+                              <div
+                                class="cabinet-order-card__process-step-text"
+                              >
+                                Доставка заказа
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="border-black-lines mbp-20 mtp-20" />
+                      <p
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-30 d-block d-lg-none"
+                      >
+                        Состав заказа
+                      </p>
+                      <div class="cabinet-order-card__details-table">
+                        <div class="cabinet-order-card__details-table-header">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            Состав заказа
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            Цена
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            Количество
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            Сумма
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <a
+                          class="cabinet-order-card__details-table-btn"
+                          href="#"
+                        >
+                          Развернуть полный список товаров
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="mbp-50">
+                  <p class="text-subtitle text-black-subtext mbp-20">
+                    Завершенные заказы
+                  </p>
+                  <div class="cabinet-order-card">
+                    <div class="cabinet-order-card__summary">
+                      <div
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-5"
+                      >
+                        Заказ от 24 июня 2020г
+                      </div>
+                      <div class="text-small text-black-subtext mbp-20">
+                        Номер заказа:
+                        <span class="font-weight-bold">02-200005489</span>
+                      </div>
+                      <div class="text-small mbp-20">
+                        Статус:
+                        <span class="font-weight-bold">Завершен</span>
+                      </div>
+                      <div
+                        class="text-small text-black-subtext mt-auto d-flex justify-content-between align-items-baseline"
+                      >
+                        <span>Общая сумма</span>
+                        <span class="text-subtitle font-weight-bold">
+                          740 820 ₸
+                        </span>
+                      </div>
+                    </div>
+                    <div class="cabinet-order-card__details">
+                      <p
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-30 d-block d-lg-none"
+                      >
+                        Состав заказа
+                      </p>
+                      <div class="cabinet-order-card__details-table">
+                        <div class="cabinet-order-card__details-table-header">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          ></div>
+                          <div class="cabinet-order-card__details-table-price">
+                            Цена
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            Количество
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            Сумма
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <a
+                          class="cabinet-order-card__details-table-btn"
+                          href="#"
+                        >
+                          Развернуть полный список товаров
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-order-card">
+                    <div class="cabinet-order-card__summary">
+                      <div
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-5"
+                      >
+                        Заказ от 24 июня 2020г
+                      </div>
+                      <div class="text-small text-black-subtext mbp-20">
+                        Номер заказа:
+                        <span class="font-weight-bold">02-200005489</span>
+                      </div>
+                      <div class="text-small mbp-20">
+                        Статус:
+                        <span class="font-weight-bold">Завершен</span>
+                      </div>
+                      <div
+                        class="text-small text-black-subtext mt-auto d-flex justify-content-between align-items-baseline"
+                      >
+                        <span>Общая сумма</span>
+                        <span class="text-subtitle font-weight-bold">
+                          740 820 ₸
+                        </span>
+                      </div>
+                    </div>
+                    <div class="cabinet-order-card__details">
+                      <p
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-30 d-block d-lg-none"
+                      >
+                        Состав заказа
+                      </p>
+                      <div class="cabinet-order-card__details-table">
+                        <div class="cabinet-order-card__details-table-header">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          ></div>
+                          <div class="cabinet-order-card__details-table-price">
+                            Цена
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            Количество
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            Сумма
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <a
+                          class="cabinet-order-card__details-table-btn"
+                          href="#"
+                        >
+                          Развернуть полный список товаров
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-order-card">
+                    <div class="cabinet-order-card__summary">
+                      <div
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-5"
+                      >
+                        Заказ от 24 июня 2020г
+                      </div>
+                      <div class="text-small text-black-subtext mbp-20">
+                        Номер заказа:
+                        <span class="font-weight-bold">02-200005489</span>
+                      </div>
+                      <div class="text-small mbp-20">
+                        Статус:
+                        <span class="font-weight-bold">Завершен</span>
+                      </div>
+                      <div
+                        class="text-small text-black-subtext mt-auto d-flex justify-content-between align-items-baseline"
+                      >
+                        <span>Общая сумма</span>
+                        <span class="text-subtitle font-weight-bold">
+                          740 820 ₸
+                        </span>
+                      </div>
+                    </div>
+                    <div class="cabinet-order-card__details">
+                      <p
+                        class="text-small text-black-secondary text-uppercase font-weight-bold mbp-30 d-block d-lg-none"
+                      >
+                        Состав заказа
+                      </p>
+                      <div class="cabinet-order-card__details-table">
+                        <div class="cabinet-order-card__details-table-header">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          ></div>
+                          <div class="cabinet-order-card__details-table-price">
+                            Цена
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            Количество
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            Сумма
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <div class="cabinet-order-card__details-table-row">
+                          <div
+                            class="cabinet-order-card__details-table-product"
+                          >
+                            <div
+                              class="cabinet-order-card__details-table-product-category"
+                            >
+                              Матрас анатомический
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-name"
+                            >
+                              Classic Downy Airbed Fiber-Tech
+                            </div>
+                            <div
+                              class="cabinet-order-card__details-table-product-size"
+                            >
+                              • 200 × 200 см
+                            </div>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-rate rating-stars mbp-10"
+                          >
+                            <span class="rating-stars__star-wrap">
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i
+                                class="rating-stars__star icon-icon_star active"
+                              ></i>
+                              <i class="rating-stars__star icon-icon_star"></i>
+                            </span>
+                            <span class="text-small text-black-secondary">
+                              7 отзывов
+                            </span>
+                          </div>
+                          <div class="cabinet-order-card__details-table-price">
+                            160 000 ₸
+                            <span
+                              class="cabinet-order-card__details-table-m-quantity"
+                            >
+                              × 3
+                            </span>
+                          </div>
+                          <div
+                            class="cabinet-order-card__details-table-quantity"
+                          >
+                            3
+                          </div>
+                          <div class="cabinet-order-card__details-table-total">
+                            480 000 ₸
+                          </div>
+                        </div>
+                        <a
+                          class="cabinet-order-card__details-table-btn"
+                          href="#"
+                        >
+                          Развернуть полный список товаров
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <i
+                          class="page-link__icon-backward icon-icon_arrows_1"
+                        ></i>
+                        Назад
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        Вперед
+                        <i
+                          class="page-link__icon-forward icon-icon_arrows_1"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <section>
+                  <h3 class="text-subtitle text-black-subtext mbp-20">
+                    Новые поступления
+                  </h3>
+                  <div class="products-grid mobile-slider">
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзину</span>
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзине</span>
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзину</span>
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзине</span>
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзину</span>
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзине</span>
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-grid__item">
+                      <div class="product-card-wrap">
+                        <div class="product-card product-card--sm-big">
+                          <div>
+                            <div class="product-card__label">
+                              Наматрасник в подарок
+                            </div>
+                            <a href="#">
+                              <img
+                                src="assets/m1.png"
+                                alt="pic"
+                                class="product-card__image"
+                              />
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="product-card__category text-small text-black-secondary"
+                            >
+                              Матрас анатомический
+                            </a>
+                            <a href="#" class="product-card__title text-black">
+                              ASKONA TERAPIA Orient
+                              <span class="product-card__size">
+                                80 × 200 см
+                              </span>
+                            </a>
+                            <div class="product-card__actions">
+                              <div class="product-card__rate rating-stars">
+                                <span class="rating-stars__star-wrap">
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star active"
+                                  ></i>
+                                  <i
+                                    class="rating-stars__star icon-icon_star"
+                                  ></i>
+                                </span>
+                                <span class="text-small text-black-secondary">
+                                  7 отзывов
+                                </span>
+                              </div>
+                              <div class="product-card__actions-panel">
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__favorite-btn"
+                                >
+                                  <i class="icon-icon_favorite"></i>
+                                </a>
+                                <a
+                                  href="#"
+                                  class="product-card__control-btn product-card__compare-btn"
+                                >
+                                  <i class="icon-icon_compare"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="product-card__footer">
+                              <div class="product-card__price">
+                                <div class="text-small text-black-secondary">
+                                  Цена
+                                </div>
+                                <div
+                                  class="product-card__discount text-black-subtext"
+                                >
+                                  300 000 ₸
+                                </div>
+                                <div
+                                  class="text-normal text-black font-weight-bold"
+                                >
+                                  300 000 ₸
+                                </div>
+                              </div>
+                              <a
+                                class="product-card__add-btn btn btn-outline-action"
+                                href="#"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзину</span>
+                              </a>
+                              <a
+                                class="product-card__added-btn btn btn-outline-black-lines text-black-subtext"
+                              >
+                                <i class="icon-icon_cart"></i>
+                                <span>В корзине</span>
+                              </a>
+                              <p
+                                class="product-card__out-of-stock text-black-secondary"
+                              >
+                                Товара нет в наличии
+                              </p>
+                            </div>
+                            <div class="product-card__attributes">
+                              <div class="row">
+                                <div class="col-10">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_softness"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Жесткость
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-мягкий
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        Средне-жесткий
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_height"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Высота
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        18 см
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-5">
+                                  <div class="product-card__attributes-item">
+                                    <i class="icon-icon_spring"></i>
+                                    <div>
+                                      <p
+                                        class="text-small text-black-secondary mb-0"
+                                      >
+                                        Пружины
+                                      </p>
+                                      <p
+                                        class="text-normal text-black-subtext mb-0"
+                                      >
+                                        EVS-500
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <div class="adaptive-bottom-spot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- inject:footer:html -->
+    <!-- contents of html partials will be injected here -->
+    <!-- endinject -->
+    <script src="js/components.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
